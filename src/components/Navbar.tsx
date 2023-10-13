@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-
 export default function Navbar(props: any) {
 
   return (
@@ -30,12 +29,12 @@ export default function Navbar(props: any) {
     </nav>
   )
 }
-// Navbar.propTypes = {
-//   title: PropTypes.string.isRequired,
-//   nav: PropTypes.array.isRequired,
-//   mode: PropTypes.string,
-//   toggleMode: PropTypes.func
-// }
+Navbar.propTypes = {
+  title: PropTypes.string.isRequired,
+  nav: PropTypes.array.isRequired,
+  mode: PropTypes.string,
+  toggleMode: PropTypes.func
+}
 Navbar.defaultProps = {
   title: 'set title here',
   nav: ['set nav here']

@@ -1,26 +1,4 @@
-import { useState } from "react"
-
 export default function About(props: any) {
-    const toggleStyle = () => {
-        if (myStyle.color === 'black') {
-            return {
-                color: 'white',
-                backgroundColor: '#1d16167d'
-            };
-            setToggleText('Enable white mode');
-        } else {
-            return {
-                color: 'black',
-                backgroundColor: 'white'
-            };
-            setToggleText('Enable dark mode');
-        }
-    }
-    const [myStyle, setMyStyle] = useState({
-        color: 'black',
-        backgroundColor: 'white'
-    });
-    const [toggleText, setToggleText] = useState('Enable dark mode');
     return (
         <div className='container mb-5 my-5'>
             <div className="accordion my-5" id="accordionExample">
